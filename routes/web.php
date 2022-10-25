@@ -3,7 +3,7 @@
 use App\Http\Controllers\PostController;
 use App\Models\Post;
 use Illuminate\Support\Facades\Route;
-use AppModels\Category;
+use App\Models\Category;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,7 +37,7 @@ Route::get('posts/{post:slug}', [PostController::class, 'show']);
 
 Route::get('/categories', function() {
     return view('categories', [
-        'tite' => 'Post Categories',
+        'title' => 'Post Categories',
         'categories' => Category::all()
     ]);
 });
