@@ -32,7 +32,7 @@
     </p>
 
       <p class="card-text">{{ $posts[0]->excerpt }}</p>
-      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none btn btn-primary">Read More</a>
+      <a href="/posts/{{ $posts[0]->slug }}" class="text-decoration-none btn btn-warning">Read More</a>
 
     </div>
   </div>
@@ -50,7 +50,7 @@
                     <p><small class="text-muted">By :
                         <a href="/posts?author={{ $post->author->username }}" class="text-decoration-none">{{ $post->author->name }}</a> {{ $posts[0]->created_at->diffForHumans() }} </small> </p>
                     <p class="card-text">{{ $post->excerpt }}</p>
-                    <a href="/posts/{{ $post->slug }}" class="btn btn-primary">Read More</a>
+                    <a href="/posts/{{ $post->slug }}" class="btn btn-warning">Read More</a>
                 </div>
             </div>
         </div>
