@@ -18,7 +18,7 @@
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
 
-    <title> WPU Blog | {{ $title }} </title>
+    <title> Bule Blog | {{ $title }} </title>
   </head>
   <body>
 
